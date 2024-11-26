@@ -6,106 +6,85 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
-    <title>Fuga dos Agiotas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em busca da cidade perdida</title>
 </head>
 <body>
     <main>
         <div class="passo ativo" id="passo-0">
             <img src="img/cenario-passo0.png" alt="">
-            <p>Você era um cara viciado em apostas e pediu muito dinheiro para agiotas em duas cidades: Rio de Janeiro e Uberlândia. Agora, você precisa fugir deles ou será pego! O que você faz?</p>
-            <button class="btn-proximo" data-proximo="1">Fugir para o Rio de Janeiro</button>
-            <button class="btn-proximo" data-proximo="2">Fugir para Uberlândia</button>
+            <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade perdida, escondida por riquezas e belezas naturais. Nessa carta, a autora deixa algumas pistas para encontrar essa cidade e eu decidi segui-las!</p>
+            <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
+            <button class="btn-proximo" data-proximo="2">Pernambuco</button>
         </div>
         <div class="passo" id="passo-1">
-            <p>Você chega no Rio de Janeiro e decide se esconder no Morro do Alemão. Como você procede?</p>
-            <button class="btn-proximo" data-proximo="3">Entrar com tudo</button>
+            <p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista.</p>
+            <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
             <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
         </div>
         <div class="passo" id="passo-2">
-            <p>Em Uberlândia, você decide se esconder em um bairro tranquilo. Como você procede?</p>
-            <button class="btn-proximo" data-proximo="5">Se esconder em um hotel</button>
-            <button class="btn-proximo" data-proximo="6">Pedir ajuda a um amigo</button>
+            <p>Em Pernambuco, você visita a histórica cidade de Olinda. Na carta, uma das pistas indica que para localizar a entrada para a cidade perdida você deve procurar a próxima pista em um dos pontos turísticos da cidade. Por qual você começa?</p>
+            <button class="btn-proximo" data-proximo="5">Investigar as igrejas antigas</button>
+            <button class="btn-proximo" data-proximo="6">Explorar as praias próximas</button>
         </div>
         <div class="passo" id="passo-3">
-            <p>Você entra com tudo no Morro do Alemão, mas logo percebe que não é seguro. O que você faz?</p>
-            <button class="btn-proximo" data-proximo="7">Procurar um esconderijo seguro</button>
-            <button class="btn-proximo" data-proximo="8">Tentar sair do morro discretamente</button>
+            <p>No topo do Pico da Tijuca, você encontra uma antiga inscrição apontando que a próxima pista está
+                localizada no Amazonas.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
         </div>
+
         <div class="passo" id="passo-4">
-            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desistindo da fuga">
-            <p>Você desiste da fuga e volta para casa, mas os agiotas não vão deixar você em paz. Melhor correr novamente!</p>
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desitindo da aventura">
+            <p>Você decide que a aventura é grande demais e volta para casa, mas sempre se pergunta o que teria
+                encontrado.</p>
         </div>
+
         <div class="passo" id="passo-5">
-            <p>Você se esconde em um hotel, mas os agiotas estão à sua procura. O que você faz?</p>
-            <button class="btn-proximo" data-proximo="9">Mudar de hotel frequentemente</button>
-            <button class="btn-proximo" data-proximo="10">Pedir proteção à polícia</button>
+            <p>Nas igrejas de Olinda, você descobre um mapa antigo escondido atrás de um altar, apontando que a próxima
+                pista está no Amazonas.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para o Amazonas</button>
         </div>
+
         <div class="passo" id="passo-6">
-            <p>Seu amigo o acolhe, mas os agiotas logo descobrem onde você está. O que você faz?</p>
-            <button class="btn-proximo" data-proximo="11">Fugir para outra cidade</button>
-            <button class="btn-proximo" data-proximo="12">Enfrentar os agiotas</button>
+            <p>Explorando as praias, você encontra uma caverna escondida, mas ela leva a um beco sem saída.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar e explorar as igrejas</button>
         </div>
+
         <div class="passo" id="passo-7">
-            <p>Você encontra um esconderijo seguro no Morro do Alemão. O que você faz agora?</p>
-            <button class="btn-proximo" data-proximo="13">Contactar alguém para ajuda</button>
-            <button class="btn-proximo" data-proximo="14">Esperar até a poeira baixar</button>
+            <p>No Amazonas, a busca pela cidade perdida se intensifica. Você se depara com um rio bifurcado.</p>
+            <button class="btn-proximo" data-proximo="9">Seguir pelo rio à esquerda</button>
+            <button class="btn-proximo" data-proximo="10">Seguir pelo rio à direita</button>
         </div>
+
         <div class="passo" id="passo-8">
-            <p>Você tenta sair do morro discretamente, mas é pego pelos agiotas. Fim da linha para você.</p>
+            <p>De volta às igrejas, você finalmente encontra o mapa antigo. Agora, para o Amazonas!</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
         </div>
+
         <div class="passo" id="passo-9">
-            <p>Você muda de hotel frequentemente, mas a vida assim é insustentável. O que você faz?</p>
-            <button class="btn-proximo" data-proximo="15">Procurar um lugar fora da cidade</button>
-            <button class="btn-proximo" data-proximo="16">Tentar negociar com os agiotas</button>
+            <p>O rio à esquerda leva você a uma cachoeira escondida com inscrições antigas que revelam a entrada da
+                cidade perdida.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
         </div>
+
         <div class="passo" id="passo-10">
-            <p>A polícia oferece proteção, mas os agiotas têm olhos em todos os lugares. O que você faz?</p>
-            <button class="btn-proximo" data-proximo="17">Se esconder na delegacia</button>
-            <button class="btn-proximo" data-proximo="18">Deixar a cidade sob proteção policial</button>
+            <p>O rio à direita termina em uma área pantanosa. Apesar de belas vistas, não há sinais da cidade perdida
+                aqui.</p>
+            <button class="btn-proximo" data-proximo="12">Retornar e tentar o outro rio</button>
         </div>
+
         <div class="passo" id="passo-11">
-            <p>Fugindo para outra cidade, você espera recomeçar a vida, mas os agiotas logo o encontram. O que você faz?</p>
-            <button class="btn-proximo" data-proximo="19">Mudar de identidade</button>
-            <button class="btn-proximo" data-proximo="20">Buscar apoio de uma gangue local</button>
+            <img src="img/cenario-passo11-cidade-perdida.png" alt="encontrando uma cidade maravilhosa perdida no Amazonas">
+            <p>Dentro da cidade perdida, você descobre tesouros inimagináveis e decide se dedicar a estudar e preservar
+                este lugar</p>
         </div>
+
         <div class="passo" id="passo-12">
-            <p>Você enfrenta os agiotas, mas a luta é desigual. Fim da linha para você.</p>
+            <p>Retornando e escolhendo o rio à esquerda, você finalmente encontra a cachoeira escondida e as inscrições
+                que levam à cidade perdida.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
         </div>
-        <div class="passo" id="passo-13">
-            <p>Contatando alguém, você consegue ajuda e planos para fugir para um lugar seguro. O que você faz?</p>
-            <button class="btn-proximo" data-proximo="21">Fugir para o exterior</button>
-            <button class="btn-proximo" data-proximo="22">Ficar e lutar</button>
-        </div>
-        <div class="passo" id="passo-14">
-            <p>Esperar até a poeira baixar é arriscado. Os agiotas podem encontrá-lo a qualquer momento. O que você faz?</p>
-            <button class="btn-proximo" data-proximo="13">Contactar alguém para ajuda</button>
-            <button class="btn-proximo" data-proximo="23">Fugir agora mesmo</button>
-        </div>
-        <div class="passo" id="passo-15">
-            <p>Procurando um lugar fora da cidade, você acha uma fazenda isolada. O que você faz?</p>
-            <button class="btn-proximo" data-proximo="24">Esconder-se na fazenda</button>
-            <button class="btn-proximo" data-proximo="25">Fugir para um país distante</button>
-        </div>
-        <div class="passo" id="passo-16">
-            <p>Você tenta negociar com os agiotas, mas eles são implacáveis. Fim da linha para você.</p>
-        </div>
-        <div class="passo" id="passo-17">
-            <p>Se escondendo na delegacia, você espera por justiça. O que você faz?</p>
-            <button class="btn-proximo" data-proximo="18">Deixar a cidade sob proteção policial</button>
-        </div>
-        <div class="passo" id="passo-18">
-            <p>Deixando a cidade sob proteção policial, você começa uma nova vida, finalmente seguro dos agiotas.</p>
-        </div>
-        <div class="passo" id="passo-19">
-            <p>Você muda de identidade e começa uma nova vida. O que você faz?</p>
-            <button class="btn-proximo" data-proximo="26">Viver discretamente</button>
-            <button class="btn-proximo" data-proximo="27">Iniciar um novo negócio</button>
-        </div>
-        <div class="passo" id="passo-20">
-            <p>Buscando apoio de uma gangue local, você consegue proteção temporária. O que você faz?</p>
-            <button class="btn-proximo" data-proximo="28">Ficar e lutar</button>
-            <button class="btn-proximo" data-proximo="29">Fugir para longe</button>
-        </div>
-        <div class="passo" id="passo-21">
-            <p>Fugindo para o exterior, você se estabelece em um[_{{{CITATION{{{_1{](https://github.com/ricardo-cas/pandas/tree/eefd8f3ed9250c15e029b7ae59a24ef9f7ffc4ab/GUIA_MARKDOWN.MD)[_{{{CITATION{{{_2{](https://github.com/EloisaSemH/marvelComicsOne/tree/0c426e0c9a409e38f7f948e7246c79c7e2343c46/public_html%2Fcontent%2Fheader.php)[_{{{CITATION{{{_3{](https://github.com/Gabriel-Lucena/pwbe_empresa_x/tree/43c8d982af677e02ba5671bff29141ff5aa2c176/index.php)[_{{{CITATION{{{_4{](https://github.com/DawidKapka/blj-blog/tree/24120c0584dc904c08c33b54ca4cb3b3ba864462/views%2Fheader.php)[_{{{CITATION{{{_5{](https://github.com/Taoufik-OuladAli/tanger-/tree/eca7c4e4d7d509423be8b5291df06432c22c27f0/ville.php)[_{{{CITATION{{{_6{](https://github.com/moeclay/pdw24jam_entry/tree/9606afcd7eba27990562194ec25565c642e33eab/application%2Fviews%2Fdashboard%2Fpersonal_point.php)[_{{{CITATION{{{_7{](https://github.com/frizthover-tediaz/Project/tree/2d70d840cbdd513868b1e98630c6f44d2ffa160b/resources%2Fviews%2Fadmin.blade.php)
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
