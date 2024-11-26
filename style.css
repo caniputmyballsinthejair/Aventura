@@ -1,18 +1,30 @@
 body {
-    background-color: #1D4221;
-    color: white;
+    background-color: #2E2E38; /* Fundo cinza-escuro suave */
+    color: #F5F5F5; /* Texto quase branco para melhor contraste */
     font-family: 'Bai Jamjuree', Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 100vh;
     margin: 0;
 }
 
 button {
-    background-color: #87ff17;
+    background-color: #3B82F6;
     color: white;
     font-family: "Bai Jamjuree", sans-serif;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #2563EB; 
+    transform: scale(1.05); 
 }
 
 .passo {
@@ -20,14 +32,24 @@ button {
 }
 
 .passo.ativo {
-    display:block;
+    display: block;
 }
 
 main {
     text-align: center;
     max-width: 90%;
+    padding: 20px;
 }
 
 img {
     max-width: 90%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
 }
+
+p {
+    font-size: 18px;
+    line-height: 1.6; 
+}
+
